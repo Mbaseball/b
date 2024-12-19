@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>野球シミュレーションプロジェクト</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 1.5em 0;
+            text-align: center;
+            font-size: 1.8em;
+        }
+        main {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 2em;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        pre {
+            background: #f1f1f1;
+            padding: 1em;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2em;
+            background: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        野球シミュレーションプロジェクト
+    </header>
+    <main>
+        <h1>概要</h1>
+        <p>
+            このプロジェクトはPythonを使った野球シミュレーションツールです。Google Colab上で動作し、
+            チームや選手のデータを利用して試合結果をシミュレーションします。
+            また、結果をエクセル形式で出力します。
+        </p>
+
+        <h2>特徴</h2>
+        <ul>
+            <li>試合シミュレーション機能</li>
+            <li>チーム・選手の成績追跡</li>
+            <li>結果をエクセルファイルに保存</li>
+        </ul>
+
+        <h2>使い方</h2>
+        <ol>
+            <li>以下のコードをGoogle Colabで実行します。</li>
+            <li>データファイルをアップロードしてください。</li>
+            <li>シミュレーション結果が生成されます。</li>
+        </ol>
+
+        <h2>ファイルアップロードコード</h2>
+        <pre><code># Google Colabでファイルをアップロード
+from google.colab import files
+
+# ファイルをアップロード
+uploaded = files.upload()
+
+# アップロードされたファイル名を確認
+print(uploaded.keys())
+        </code></pre>
+
+        <h2>必要なデータ</h2>
+        <p>
+            プロジェクトには以下のデータファイルが必要です。各データはGoogle Colabにアップロードして使用します。
+        </p>
+        <ul>
+            <li><strong>Y3.xlsx:</strong> 野手データ</li>
+            <li><strong>P5.xlsx:</strong> 投手データ</li>
+            <li><strong>日程.xlsx:</strong> 試合日程データ</li>
+        </ul>
+
+        <h2>GitHubリポジトリ</h2>
+        <p>
+            プロジェクト全体をGitHubからダウンロードできます。
+        </p>
+        <p>
+            <a href="https://github.com/your-username/baseball-simulation" target="_blank">GitHubリポジトリを開く</a>
+        </p>
+    </main>
+    <footer>
+        Copyright © 2024 野球シミュレーションプロジェクト
+    </footer>
+</body>
+</html>
